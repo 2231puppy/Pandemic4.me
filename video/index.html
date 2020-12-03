@@ -22,6 +22,17 @@
       font-family: 'Oswald', serif;
       font-size: 48px;
     }
+	.video {
+      width: 90vw; /* 90% of viewport vidth */
+      height: 50.625vw; /* ratio = 9/16 * 90 = 50.625 */
+      background: pink;
+      max-height: 90vh;
+      max-width: 160vh; /* 16/9 * 90 = 160 */
+      margin: auto;
+      position: absolute;
+      top:0;bottom:0;
+      left:0;right:0;
+    }
   </style>
   </head>
 <body>
@@ -39,7 +50,7 @@
     }
     console.log('Query variable %s not found', variable);
     }
-  $(".jumbotron").append('<div class="embed-responsive embed-responsive-16by9"><video height=70% class="embed-responsive-item" controls autoplay><source src="https://www.googleapis.com/drive/v3/files/' + getQueryVariable("id") + '" type="video/mp4"></video></div>');
+  $(".jumbotron").append('<div class="embed-responsive embed-responsive-16by9"><video height=70% class="embed-responsive-item video" controls autoplay><source src="https://www.googleapis.com/drive/v3/files/' + getQueryVariable("id") + '" type="video/mp4"></video></div>');
   </script>
   <a href="/">Home</a>
 </div>
