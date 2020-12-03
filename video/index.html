@@ -39,7 +39,7 @@
     }
     console.log('Query variable %s not found', variable);
     }
-  $("div").append('<center><video controls><source src="/' + getQueryVariable("id") + '.mp4" type="video/mp4"></video></center>');
+  $("div").append('<div class="embed-responsive"><center><video controls><source src="/' + getQueryVariable("id") + '.mp4" type="video/mp4"></video></center></div>');
   </script>
   <a href="/">Home</a>
 </div>
