@@ -3,7 +3,6 @@
 <head>
   <title>Pandemic4.me</title>
   <meta charset="utf-8">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <link rel="manifest" href="/manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Post your pandemic videos here at pandemic4.me!">
@@ -120,20 +119,6 @@
 <img src="/logo.png" class="img-fluid">
 <br>
 <h5>Problems? Don't like the new theme? Email them to bugs@pandemic4.me</h5>
-<script>
-function email() {
-Email.send({
-    SecureToken : "7d5e42ab-d737-4040-9cbc-9815eab335a5",
-	To : '2231puppy@gmail.com',
-	From : "admin@pandemic4.me",
-	Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  alert("Success")
-);
-};
-</script>
-<button type="button" class="btn btn-primary" onClick="email();">Submit a generic bug report for something obvious</button>
 </footer>
 </center>
 </body>
