@@ -84,17 +84,6 @@
   })();
 </script>
 <!-- End Matomo Code -->
-<script src="https://raw.githubusercontent.com/sitexw/BlockAdBlock/master/blockadblock.js"></script>
-<script>
-  function adBlockDetected() {
-    alert('AdBlock is enabled');
-}
-if(typeof blockAdBlock === 'undefined') {
-	adBlockDetected();
-} else {
-	blockAdBlock.on(true, adBlockDetected);
-}
-</script>
 </head>
 <body>
 <div class="jumbotron">
