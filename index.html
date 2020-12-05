@@ -91,6 +91,8 @@
 }
 if(typeof blockAdBlock === 'undefined') {
 	adBlockDetected();
+} else {
+	blockAdBlock.onDetected(adBlockDetected);
 }
 </script>
 </head>
