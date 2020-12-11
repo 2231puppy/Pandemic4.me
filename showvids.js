@@ -1,5 +1,5 @@
+function shuffle() {
 var totalItems = 30
-var elem = "ul"
 var classname = "shuffle"
 function shuffleArray(array) {
   let curId = array.length;
@@ -32,5 +32,18 @@ for (let i = 0; i < totalItems; i++) {
 }
 for (let i = 0; i < totalItems - 25; i++) {
   document.querySelector(elem).removeChild(document.querySelector(elem).lastElementChild);
+}
+}
+
+function search() {
+li = ul.getElementsByClassName('search');
+for (i = 0; i < li.length; i++) {
+  a = li[i].getElementsByTagName("p")[0];
+  txtValue = a.textContent || a.innerText;
+  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    li[i].style.display = "";
+  } else {
+    li[i].style.display = "none";
+  }
 }
 }
