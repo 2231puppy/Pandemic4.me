@@ -36,7 +36,8 @@ for (let i = 0; i < totalItems - 25; i++) {
 }
 
 function search() {
-li = document.getElementsByClassName('search');
+ul = document.getElementById("searchdeck");
+li = ul.getElementsByClassName('search');
 for (i = 0; i < li.length; i++) {
   a = li[i].getElementsByTagName("p")[0];
   txtValue = a.textContent || a.innerText;
