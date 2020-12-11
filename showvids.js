@@ -36,7 +36,9 @@ for (let i = 0; i < totalItems - 25; i++) {
 }
 
 function search() {
+input = document.getElementById('searchBar');
 ul = document.getElementById("searchdeck");
+filter = input.value.toUpperCase();
 li = ul.getElementsByClassName('search');
 for (i = 0; i < li.length; i++) {
   a = li[i].getElementsByTagName("p")[0];
